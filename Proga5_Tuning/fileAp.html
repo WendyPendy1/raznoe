@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>StranickaApi</title>
+</head>
+<body>
+
+	<div class="Block1" align="center">
+		<div id="text_Block1"><h4>Введите данные</h4></div>
+		<form action="/create_user" method="post">
+			<label>name:</label>
+			<br>
+			<input type="text" name="name">
+			<br>
+			<label>pass:</label>
+			<br>
+			<input type="password" name="passw">
+			<br>
+			<input type="submit" name="send" value="send">
+			<br>
+		</form>
+	</div>
+
+	<div class="Block2" align="center">
+		<div id=text_Block2><h4>Получить юзеров</h4></div>
+		<form action="/get_user_all" method="get">
+			<div class="get_all">
+				<input type="submit" name="get_submit" value="gets">
+				<br>
+				<div name="get_all"></div>
+			</div>
+		</form>
+		<div id="user_id"><h4>Получить юзера по id</h4></div>
+		<form action="/get_user_id" method="get">
+			<div class="get_user_id">
+				<input type="text" name="vvod_id">
+				<br>
+				<input type="submit" name="get_id" value="gets">
+			</div>
+		</form>
+
+		<br>
+		<div class="auth" align="center">
+			<div> - - - - - - - - - - - - - - - - - - - - - - - - - - </div>
+			<div>Авторизоваться:</div>
+			<br>
+			<form action="/auth" method="post">
+				<label>name:</label>
+				<br>
+				<input type="text" name="name">
+				<br>
+				<label>pass:</label>
+				<br>
+				<input type="password" name="passw">
+				<br>
+				<br>
+				<input type="submit" name="sub_auth" value="Войти">
+				<br>
+				<br>
+			</form>
+			<div class="button_auth">
+				<input type="button" value="кнопака только для авторизованных">
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<footer>
+	<div align="center">
+		<p>Здесь нижний тагил</p>
+	</div>
+</footer>
+
+</html>
